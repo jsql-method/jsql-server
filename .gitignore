@@ -1,0 +1,12 @@
+/.idea
+/jsql-cli.iml
+/node_modules
+/jsql
+/package-lock.json
+/node_modules
+/dist
+/all
+/out
+/jsql-cli-0.1.0.tgz
+/*.tgz
+/all.

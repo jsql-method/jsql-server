@@ -1,0 +1,44 @@
+{
+  "name": "jsql-server",
+  "version": "0.1.0",
+  "description": "JSQL Local Server. Visit www.jsql.it",
+  "homepage": "https://jsql.it",
+  "author": {
+    "name": "JSQL Sp.z.o.o. (Ltd, LLC)",
+    "email": "support@jsql.it"
+  },
+  "main": "build/server.js",
+  "scripts": {},
+  "preferGlobal": true,
+  "bin": {
+    "jsql-server": "bin/jsql-server"
+  },
+  "bugs": {
+    "url": "https://jsql.it/issues"
+  },
+  "keywords": [
+    "jsql",
+    "jsql-server",
+    "jsql-it",
+    "jsql-optimization"
+  ],
+  "licenses": [
+    {
+      "type": "LicenseRef-LICENSE",
+      "url": "https://jsql.it/public-packages-license"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "child-process": "^1.0.2",
+    "fs-extra": "^7.0.1",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "node-cmd": "^3.0.0"
+  }
+}
