@@ -60,7 +60,7 @@ Printer.showHelp = function () {
 };
 
 Printer.showVersion = function () {
-    console.log('JSQL Server version is ' + chalk.blueBright('0.1.0'));
+    console.log('JSQL Server version is ' + chalk.blueBright('0.2.0'));
 };
 
 let Executor = {};
@@ -138,10 +138,12 @@ Executor.execCli = function (args, cwd) {
     let dir = path.normalize(cwd + '/jar/jsql-api-provider');
     let cmd = ' -jar ' + dir;
 
+    let port = ' -Dserver.port='+params.port;
+
     if (system === 'linux') {
-        cmd = '/usr/bin/java' + cmd;
+        cmd = '/usr/bin/java' + port + cmd;
     } else {
-        cmd = 'java' + cmd + ".jar";
+        cmd = 'java' + port + cmd + ".jar";
     }
 
     if (params.debug) {
